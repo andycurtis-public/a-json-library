@@ -14,21 +14,21 @@ WORKDIR /workspace
 RUN git clone \
       https://${GITHUB_TOKEN}@github.com/knode-ai-open-source/a-cmake-library.git \
       /workspace/a-cmake-library && \
-      cd /workspace/a-cmake-library && ./build_install.sh \
+      cd /workspace/a-cmake-library && ./build_install.sh && \
       rm -rf /workspace/a-cmake-library
 
 # the-macro-library
 RUN git clone \
       https://${GITHUB_TOKEN}@github.com/knode-ai-open-source/the-macro-library.git \
       /workspace/the-macro-library && \
-      cd /workspace/the-macro-library && ./build_install.sh \
+      cd /workspace/the-macro-library && ./build_install.sh && \
       rm -rf /workspace/the-macro-library
 
 # a-memory-library
 RUN git clone \
       https://${GITHUB_TOKEN}@github.com/knode-ai-open-source/a-memory-library.git \
       /workspace/a-memory-library && \
-      cd /workspace/a-memory-library && ./build_install.sh \
+      cd /workspace/a-memory-library && ./build_install.sh && \
       rm -rf /workspace/a-memory-library
 
 # Build library
